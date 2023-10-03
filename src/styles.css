@@ -1,21 +1,77 @@
-* {
-  font-family: Arial, Helvetica, sans-serif;
+/* Reset some default styles */
+body, h1, h2, ol, p {
+    margin: 0;
+    padding: 0;
 }
 
-html, body {
-  margin: 0;
-  border: 0;
-  padding: 0;
-  background-color: #fff;
+/* Apply different fonts */
+body {
+    font-family: 'Press Start 2P', cursive;
 }
 
+/* Apply the Press Start 2P font only to the "Font Example" section */
+#font-example {
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the main content area */
 main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-main > h1 {
-  text-align: center;
-  font-size: 3.5em;
+/* Style the instructions section */
+#instructions {
+    margin-bottom: 20px;
+}
+
+#instructions h2 {
+    color: #4CAF50;
+}
+
+#instructions ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+/* Style the font example section */
+#font-example {
+    background-color: #FFFF00;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+}
+
+/* Style graphics using CSS */
+.graphics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.graphic {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    border-radius: 50%;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
